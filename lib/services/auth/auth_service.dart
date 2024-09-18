@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:iyakking/models/yakking_user.dart';
+import 'package:iyakking/services/auth/auth_mock_service.dart';
 
 abstract class AuthService {
   YakkingUser? get currentUser;
@@ -10,4 +11,9 @@ abstract class AuthService {
   Future<void> signup(String nome, String email, String password, File? image);
   Future<void> login(String email, String password);
   Future<void> logout();
+
+  factory AuthService() {
+    return AuthMockService();
+    // return AuthFirebaseService();
+  }
 }

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:iyakking/pages/auth.dart';
 import 'package:iyakking/pages/loading_page.dart';
 import 'package:iyakking/pages/yak_page.dart';
-import 'package:iyakking/services/auth/auth_mock_service.dart';
+import 'package:iyakking/services/auth/auth_service.dart';
 
 class AuthOrAppPage extends StatelessWidget {
   const AuthOrAppPage({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class AuthOrAppPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder(
-          stream: AuthMockService().userChanges,
+          stream: AuthService().userChanges,
           builder: (ctx, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return LoadingPage();

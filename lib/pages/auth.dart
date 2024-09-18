@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iyakking/components/auth_form.dart';
 import 'package:iyakking/models/auth_form_data.dart';
-import 'package:iyakking/services/auth/auth_mock_service.dart';
+import 'package:iyakking/services/auth/auth_service.dart';
 
 class Auth extends StatefulWidget {
   const Auth({super.key});
@@ -18,16 +18,16 @@ class _AuthState extends State<Auth> {
       setState(() => isLoading = true);
 
       if (formData.isLogin) {
-        AuthMockService().login(formData.email, formData.password);
+        AuthService().login(formData.email, formData.password);
       } else {
         // signup
-        AuthMockService().signup(
+        AuthService().signup(
             formData.name, formData.email, formData.password, formData.image);
       }
     } catch (err) {
       // erro
     } finally {
-      setState(() => isLoading = false); //
+      setState(() => isLoading = false);
     }
   }
 
