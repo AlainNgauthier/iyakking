@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iyakking/pages/auth.dart';
+import 'package:iyakking/pages/auth_or_app_page.dart';
 // import 'package:iyakking/pages/loading_page.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green.shade900),
         useMaterial3: true,
       ),
-      home: const Auth(),
+      home: const AuthOrAppPage(),
       debugShowCheckedModeBanner: false,
     );
   }
