@@ -10,9 +10,9 @@ import 'package:iyakking/services/auth/auth_service.dart';
 // Mock da autenticação (mock do Firebase)
 class AuthMockService implements AuthService {
   static final defaultUser = YakkingUser(
-      id: '1',
-      name: 'Teste',
-      email: 'teste@email.com',
+      id: '222',
+      name: 'Ana',
+      email: 'ana@email.com',
       imageURL: 'assets/images/avatar.png');
 
   // static variables / singleton pattern

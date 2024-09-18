@@ -6,23 +6,8 @@ import 'package:iyakking/models/yakking_user.dart';
 import 'package:iyakking/services/yakking/yak_service.dart';
 
 class YakMockService implements YakService {
-  static final List<YakMessage> _msgs = [
-    // default messages
-    YakMessage(
-        id: '1',
-        text: 'Hello!!!',
-        createdAt: DateTime.now(),
-        userId: '123',
-        userName: 'Teste',
-        userImageURL: 'assets/images/avatar.png'),
-    YakMessage(
-        id: '2',
-        text: 'Hey! Where have you been at?',
-        createdAt: DateTime.now(),
-        userId: '123',
-        userName: 'Ana',
-        userImageURL: 'assets/images/avatar.png')
-  ];
+  static final List<YakMessage> _msgs = [];
+
   static MultiStreamController<List<YakMessage>>? _controller;
   static final _msgsStream = Stream<List<YakMessage>>.multi((controller) {
     _controller = controller;
@@ -42,7 +27,7 @@ class YakMockService implements YakService {
         userName: user.name,
         userImageURL: user.imageURL);
     _msgs.add(newMessage);
-    _controller?.add(_msgs);
+    _controller?.add(_msgs.reversed.toList());
     return newMessage;
   }
 }
