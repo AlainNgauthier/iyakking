@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "441152548285",
+    "project_id": "iyakking",
+    "storage_bucket": "iyakking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441152548285:android:960a961f8ec6feb466f6d4",
+        "android_client_info": {
+          "package_name": "com.alaingauthier.iyakking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC56ZpMIU_w-kLFNZgwe1yWmmIM-_fgQB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
