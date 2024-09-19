@@ -1,16 +1,24 @@
-# iyakking
+# iYakking
 
-A new Flutter project.
+iYakking é um projeto desenvolvido no âmbito da disciplina Desenvolvimento Móvel do departamento de Computação da Universidade Federal de São Carlos (UFSCar) e que visa fornecer uma plataforma de chat em tempo real. Ele é construído utilizando tecnologias modernas para garantir uma comunicação eficiente e segura entre os usuários.
 
-## Getting Started
+## Funcionalidades:
 
-This project is a starting point for a Flutter application.
+- Chat em tempo real
+- Suporte a múltiplos usuários
+- Interface amigável e intuitiva
+- Segurança e privacidade dos seus dados
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tecnologia utilizadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- Firebase Authentication
+- Firestore Database
+
+## Instalação
+
+1. Clone o repositório
+2. Abre o projeto no seu IDE de preferência
+3. Sincronize o projeto com os arquivos Gradle.
+4. Execute o projeto em um emulador ou dispositivo físico.
