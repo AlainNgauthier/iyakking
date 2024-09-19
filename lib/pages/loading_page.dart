@@ -16,7 +16,7 @@ class LoadingPage extends StatelessWidget {
             RefreshProgressIndicator(),
             SizedBox(height: 30),
             Text(
-              'Loading',
+              '',
               style: TextStyle(
                 color: Theme.of(context).primaryTextTheme.headlineMedium?.color,
               ),

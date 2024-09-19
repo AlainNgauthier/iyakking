@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:iyakking/models/yakking_user.dart';
-import 'package:iyakking/services/auth/auth_mock_service.dart';
+import 'package:iyakking/services/auth/auth_firebase_service.dart';
 
 abstract class AuthService {
   YakkingUser? get currentUser;
@@ -13,7 +13,7 @@ abstract class AuthService {
   Future<void> logout();
 
   factory AuthService() {
-    return AuthMockService();
-    // return AuthFirebaseService();
+    // return AuthMockService();
+    return AuthFirebaseService();
   }
 }

@@ -15,18 +15,19 @@ class _AuthState extends State<Auth> {
 
   Future<void> handleSubmit(AuthFormData formData) async {
     try {
+      // if (!mounted) return;
       setState(() => isLoading = true);
 
       if (formData.isLogin) {
         AuthService().login(formData.email, formData.password);
       } else {
-        // signup
         AuthService().signup(
             formData.name, formData.email, formData.password, formData.image);
       }
     } catch (err) {
-      // erro
+      // TODO: Handling error
     } finally {
+      // if (!mounted) return;
       setState(() => isLoading = false);
     }
   }
